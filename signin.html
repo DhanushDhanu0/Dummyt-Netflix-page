@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="../Website/netflixhome.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <div id="page">
+        <div class="signInpage">
+            <img id="img1"src="https://about.netflix.com/images/logo.png" alt="" width="150px">
+           <div id="mainpage">
+            <form action="">
+                <div class="inputFields">
+                    <h1 style="text-align: left;">Sign In</h1>
+                    <input class="input" id="email" type="email" placeholder="Email Address" >
+                    <input class="input" id="password" placeholder="Enter password" >
+                    <button id="signinBtn">Sign In</button>
+                    <p>OR</p>
+                    <button id="signinCode">Use a Sign-in Code</button>
+                    <p>Forgot password ?</p>
+                    <div id="checkbox">
+                        <input type="checkbox">
+                        <p>Remember me</p>
+                    </div> 
+            </form>
+                <p>New To Netflix ?<a href="" style="color: white;">Sign up Now</a></p>
+                <div id="info">
+                    This page is protected by Google reCAPTCHA to ensure you're not a bot.<a href="" style="color: blue;"> Learn more.</a>
+                </div>
+            </div>
+           </div>          
+    </div>
+
+    <script>
+          const email=document.getElementById('email');
+          const pwd =document.getElementById('password');
+          const btn=document.getElementById('signinBtn');
+          console.log(email);
+          console.log(pwd);
+          console.log(btn);
+        
+        btn.addEventListener('click',()=>{
+          console.log(email.value);
+        })  
+          
+         
+          
+    </script>
+</body>
+</html>
